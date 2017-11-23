@@ -8,6 +8,9 @@ $(function(){
 			//create a variable that holds the amount value
 			//...what's the pure javascript equivalent of .val
 			var amount = $('#amount').val();
+			if(amount){
+				newTotal += parseInt(amount);
+			}
 		})
 	})
 });
