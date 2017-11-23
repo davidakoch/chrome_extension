@@ -11,6 +11,11 @@ $(function(){
 			if(amount){
 				newTotal += parseInt(amount);
 			}
+			chrome.storage.sync.set({'total': newTotal});
+
+			//find the javascript equivalent of text
+			$('#total').text(newTotal);
+			$('#amount').val('')
 		})
 	})
 });
