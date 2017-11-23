@@ -4,8 +4,10 @@ $(function(){
 			var newTotal = 0;
 			if (budget.total){
 				newTotal += parseInt(budget.total);
-				
 			}
+			//create a variable that holds the amount value
+			//...what's the pure javascript equivalent of .val
+			var amount = $('#amount').val();
 		})
 	})
 });
