@@ -1,4 +1,9 @@
-//$(function(){
+$(function(){
+
+	chrome.storage.sync.get('total', function(budget){
+		$('#total').text(budget.total);
+	})
+
 	//get element by class...then add a click event
 	$('#spendAmount').click(function(){
 		chrome.storage.sync.get('total', function(budget){
@@ -19,4 +24,4 @@
 			$('#amount').val('')
 		})
 	})
-//});
+});
