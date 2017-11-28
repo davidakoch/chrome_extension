@@ -23,7 +23,8 @@ $(function(){
 
 			//create a variable that holds the amount value
 			//...what's the pure javascript equivalent of .val
-			var amount = $('#amount').val();
+
+			var amount = document.getElementById("amount").value;
 			if(amount){
 				newTotal += parseInt(amount);
 			}
