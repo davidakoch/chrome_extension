@@ -1,7 +1,5 @@
-$(function(){
-
 	chrome.storage.sync.get('total', function(budget){
-		$('#total').text(budget.total);
+		document.getElementById("total").innerHTML = budget.total; 
 	})
 
 		//here is pure javascript code...not jquery	
@@ -21,8 +19,7 @@ $(function(){
 			chrome.storage.sync.set({'total': newTotal});
 
 			document.getElementById("total").innerHTML = newTotal;
-			$('#amount').val('')
+			//$('#amount').val('')
 	
 		})
-	}
-});
+	};
