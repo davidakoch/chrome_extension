@@ -1,7 +1,8 @@
 $(function(){
 
 	chrome.storage.sync.get('limit', function(budget){
-		$('#limit').val(budget.limit);
+		//$('#limit').val(budget.limit);
+		document.getElementById("limit").value = budget.limit;
 	})
 
 	$('#saveLimit').click(function(){
