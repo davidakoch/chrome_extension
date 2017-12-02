@@ -7,4 +7,8 @@ $(function(){
 			})
 		}
 	})
+
+	$('#resetTotal').click(function(){
+		chrome.storage.sync.set({'total': 0});
+	});
 })
