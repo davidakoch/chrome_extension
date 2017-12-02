@@ -1,5 +1,6 @@
-	chrome.storage.sync.get('total', function(budget){
+	chrome.storage.sync.get(['total', 'limit'], function(budget){
 		document.getElementById("total").innerHTML = budget.total; 
+		document.getElementById("limit").innerHTML = budget.limit; 
 	})
 
 		//here is pure javascript code...not jquery	
