@@ -5,14 +5,15 @@ $(function(){
 		document.getElementById("limit").value = budget.limit;
 	})
 
-	$('#saveLimit').click(function(){
-		var limit = $('#limit').val();
+	document.getElementById("saveLimit").onclick =
+	function(){
+		var limit = document.getElementById("limit").value;
 		if(limit){
 			chrome.storage.sync.set({'limit': limit}, function(){
 				close();
 			})
 		}
-	})
+	}
 
 	/*move resetTotal function and html to 
 	popupjs and popup html */
