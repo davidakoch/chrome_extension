@@ -4,7 +4,7 @@
 	})
 
 		//here is pure javascript code...not jquery	
-		document.getElementById("spendAmount").onclick = 
+	document.getElementById("spendAmount").onclick = 
   		function(){
 		chrome.storage.sync.get('total', function(budget){
 			var newTotal = 0;
@@ -24,3 +24,5 @@
 	
 		})
 	};
+
+	document.getElementById("resetTotal")
