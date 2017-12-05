@@ -28,9 +28,9 @@
 						type: 'basic',
 						iconUrl: 'icon48.png',
 						title: 'Limit Reached!',
-						message: "Uh Oh! Looks like you've reached your limit, Moron!"
+						message: "Uh Oh! Looks like you've reached your limit!"
 					};
-					chrome.notifications.create('limitNotif', )
+					chrome.notifications.create('limitNotif', notifOptions);
 				}
 			});
 
