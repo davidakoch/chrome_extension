@@ -1,4 +1,3 @@
-//$(function(){
 
 	chrome.storage.sync.get('limit', function(budget){
 		//$('#limit').val(budget.limit);
@@ -15,14 +14,7 @@
 		}
 	}	
 
-	/*move resetTotal function and html to 
-	popupjs and popup html */
-	/*$('#resetTotal').click(function(){
-		chrome.storage.sync.set({'total': 0});
-	});
-})*/
-
-document.getElementById("resetTotal").onclick = 
+	document.getElementById("resetTotal").onclick = 
 		function(){
 		chrome.storage.sync.set({'total': 0});
 	}

@@ -3,11 +3,10 @@
 		document.getElementById("limit").innerHTML = budget.limit; 
 	})
 
-	/*document.getElementById("resetTotal").onclick = 
+	document.getElementById("resetTotal").onclick = 
 		function(){
 		document.getElementById("total").innerHTML = 0; 
-		//chrome.storage.sync.set({'total': 0});
-	}*/
+	}
 
 		//here is pure javascript code...not jquery	
 	document.getElementById("spendAmount").onclick = 
