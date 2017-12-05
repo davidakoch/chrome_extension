@@ -6,6 +6,16 @@
 	document.getElementById("resetTotal").onclick = 
 		function(){
 		document.getElementById("total").innerHTML = 0; 
+
+		if(amount && newTotal >= budget.limit){
+			var notifOptions = {
+				type: 'basic',
+				iconUrl: 'icon48.png',
+				title: 'Total reset',
+				message: "Uh Oh! Looks like you've reached your limit!"
+			};
+				chrome.notifications.create('limitNotif', notifOptions);
+		}		
 	}
 
 		//here is pure javascript code...not jquery	
